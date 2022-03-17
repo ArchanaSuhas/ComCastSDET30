@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <test thread-count="2" name="Test runner1" parallel="tests">
+    <classes>
+      <class name="com.crm.Organisations.CraeteOrgainsationWithTypeDropDownTest"/>
+      <class name="com.crm.Organisations.CreateOrganisationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="2" name="Test runner2" parallel="tests">
+    <classes>
+      <class name="com.crm.Contact.CreateContactWithOrgTest"/>
+          </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
